@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.contents{
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: rgb(32, 32, 32);
+}
+.content{
+    height: 85%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    
+}
+.chatzone{
+    width: 53%;
+}
+.userask{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    text-wrap: wrap;
+}
+.userask .user_info{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    text-wrap: wrap;
+}
+.userask .user_avatar{
+    border-radius: 50%;
+}
+.userask .user_info .user_name{
+    font-weight: 600;
+    font-size: 15px;
+}
+.userask .user_info .user_promt{
+    text-wrap: wrap;
+    word-break: break-all;
+    
+ 
+}
+.userask img{
+    height: 30px;
+    width: 30px;
+}
+.promtbar{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+}
+.text{
+    width: 53%;
+    position: relative;
+}
+.promtbar input{
+    border: solid 1px rgb(66, 66, 66);
+    border-radius: 17px;
+    background-color:  rgb(32, 32, 32);
+    padding: 16px 25px 16px 25px;
+    width: 100%;
+    max-width: 95vw;
+    color: white;
+    font-size: 16px;
+    
+}
+.promtbar input:focus{
+    border: solid 1px rgb(80, 80, 80);
+    outline:none;
+}
+.promtbar button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:20px;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+}
+::placeholder {
+    font-size: 15px;
+    font-weight:500;
+    
+  }
+.invalid{
+    background-color: rgb(58, 58, 58);
+    color: rgb(41, 41, 41);
+    cursor: progress;
+}
